@@ -1,2 +1,2 @@
-# Leetcode_js
-get familiar with DSA in JS
+# Leetcode
+Practice Data structure and Algorithms
