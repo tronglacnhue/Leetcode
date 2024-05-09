@@ -1,2 +1,2 @@
 # Leetcode
-Practice Data structure and Algorithms
+Practice Data structure and Algorithm
