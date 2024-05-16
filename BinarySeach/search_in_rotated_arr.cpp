@@ -44,15 +44,15 @@ int search(vector<int>& nums, int target) {
             if (nums[mid] == target) {
                 return mid;
             }
-            if(nums[low] < nums[high]) {
-                if(nums[mid] > target) {
+            if(nums[low] < nums[mid]) {
+                if(nums[mid] >= target && target >= nums[low]) {
                     high = mid - 1;
                 } else low = mid + 1;
             } else {
-                if(nums[low] < target && target < nums[mid]) {
-                    high = mid - 1;
-                } else {
+                if(nums[mid] <= target && target <= nums[high]) {
                     low = mid + 1;
+                } else {
+                    high = mid - 1;
                 }
             }
         }
